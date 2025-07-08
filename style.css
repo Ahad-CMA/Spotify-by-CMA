@@ -269,6 +269,7 @@ body{
         background-color:black;
         position: absolute;
         left: -120% ;
+        /* max-width: 60%; */
         width: 390px;
     }
     .right{
@@ -327,6 +328,9 @@ body{
 @media (max-width:500px) {
     .card{
         width: 80vw;
+    }
+    .left{
+        width: 100%;
     }
 }
 .fbox{
