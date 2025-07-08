@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,711&family=Menbere:wght@100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+      font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: #121212;
+}
+
+.container{
+    background-color: black;
+    color: white;
+}
+.left{
+    width: 25vw;
+    z-index: 1;
+    transition: 0.7s ease-out;
+    margin: 5px;
+}
+.right{
+    background-color: #121212;
+    position: relative;
+    margin: 5px;
+
+    width: 75vw;
+    height: 90vh;
+    border-radius: 7px;
+}
+.home{
+    background-color: #121212;
+    border-radius: 7px;
+
+}
+.library{
+    background-color: #121212;
+    border-radius: 7px;
+}
+.head{
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gap{
+    gap: 8px;
+}
+.head img{
+    width: 25px;
+}
+.invert{
+    filter:invert(1);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.close{
+    display: none;
+}
+.logo img{
+    width: 100px;
+    height: 35px;
+    margin-left: 8px;
+}
+.home ul li {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 15px;
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(169, 166, 166);
+    font-size: 12px;
+}
+.ft{
+    margin-top: 50px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: #1f1f1f;  
+    border-radius: 8px; 
+}
+.l-1{
+    font-size:larger;
+}
+.l-2{
+    margin-top: 10px;
+}
+.btn-1{
+    background-color: white;
+    border-radius: 15px;
+    font-weight: 700;
+    padding: 7px 15px;
+    margin-top: 10px;
+
+}
+.lang{
+    color:white;
+    
+}
+.lang img{
+    width: 20px;
+    filter: invert(1);
+    
+}
+.lng-m{
+    gap: 5px ;
+    border: 1px solid white;
+    padding: 7px 15px;
+    border-radius: 20px;
+
+}
+.header{
+    /* padding: 15px; */
+    background-color: #090909;
+    justify-content: space-between;
+}
+.lgn{
+    background-color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: large;
+    font-weight: 700;
+}
+.lgn:hover{
+    transform: scale(1.1);
+}
+.sgn:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.sgn{
+    background-color: transparent;
+    color: rgb(171, 169, 169);
+    border: 0px;
+    font-size: 15px;
+    margin: 8px;
+}
+.arrows{
+    padding: 5px;
+}
+.lft{
+    padding: 5px;
+}
+.rgt{
+    padding: 5px;
+}
+.sp{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.cardcontainer{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 30px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+.card{
+    width: 200px;
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #252525;
+}
+.card img{
+    border-radius: 8px;
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+.card svg{
+    position: absolute;
+    right: 12px;
+    top: 180px;
+    transition: 0.5s ease-out;
+    opacity: 0;
+}
+.card svg:hover{
+    opacity: 1;
+    top: 170px;
+}
+.card:hover{
+    background-color: #1f1f1f;
+}
+.playbar{
+    width: 70%;
+    filter: invert(1);
+    position: fixed;
+    margin-left: 15px;
+    /* position: relative; */
+    bottom: 12px;
+    opacity: 1;
+    background-color: #f6f0f0;
+    border-radius: 15px;
+    padding: 15px;
+}
+.soundcontrol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+.soundcontrol img{
+    cursor: pointer;
+}
+.slists{
+    display: flex;
+    height: 344px;
+    overflow: auto  ;
+}
+.cont{
+    border: 2px solid white;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px 0px;
+    font-size: 15px;
+}
+.songname p{
+    padding: 8px;
+}
+.songinfo{
+    /* border: 2px solid white; */
+    width: 250px;
+}
+.seekbar{
+    width: 97%;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: black;
+    /* margin: auto; */
+}
+.circle{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    /* top: 1px; */
+    bottom: -6px;
+    left: 0%;
+    transition: left 0.5s;
+    border-radius: 15px;
+    background-color: black;
+}
+.audiobar{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    padding: 5px;
+}
+.hamburger{
+    display: none;
+}
+@media (max-width:1400px){
+    .left{
+        background-color:black;
+        position: absolute;
+        left: -120% ;
+        width: 390px;
+    }
+    .right{
+        width: 95vw;
+    }
+    .playbar{
+        width: calc(100vw - 80px);
+        /* position: fixed;
+        bottom: 2px; */
+    }
+    .seekbar{
+        width: calc(100vw - 80px);
+        /* width: 80vw; */
+    }
+    .cardcontainer{
+        justify-content: center;
+        margin: 0;
+    }
+    .audiobar{
+        text-align: center;
+        /* padding: 5px; */
+        width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .songinfo{
+        padding-bottom: 15px;
+    }
+    .soundcontrol{
+        padding-bottom: 15pxf;
+    }
+    .card{
+        width: 40vw;
+    }
+    .hamburger{
+        display: block;
+    }
+    
+    .close{
+        display: block;
+        
+    }
+}
+.sv{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vol{
+    
+    margin-left: 10px;
+    display: flex;
+}
+@media (max-width:500px) {
+    .card{
+        width: 80vw;
+    }
+}
+.fbox{
+    min-width: 15vw;
+    margin: 10px;
+    line-height: 2;
+}
+.fbox p{
+    opacity: 0.7;
+}
+.pfbox{
+    background-color: #121212;
+    border-radius: 15px;
+    /* width: 85vw; */
+    padding: 15px;
+    /* height: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.line{
+    width: 85vw;
+    height: 1px;
+    background-color: #3c3c3c;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.fend{
+    font-size: 13px;
+       opacity: 0.7;
+}
