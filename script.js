@@ -40,7 +40,7 @@ currentsong.src  = "/songs/" +track
 if(!pause){
 
     currentsong.play()
-    play.src="pause.svg"
+    play.src="svg/pause.svg"
 }
 document.querySelector(".songtime").innerHTML =" 00:00/00:00"
 document.querySelector(".songinfo").innerHTML = decodeURI(track)
@@ -53,11 +53,11 @@ async function main() {
     console.log(songs);  
     let songsol = document.querySelector(".slists").getElementsByTagName("ol")[0]
     for (const song of songs) {
-        songsol.innerHTML=songsol.innerHTML + `<li class="cont flex"> <img  class="invert" src="music.svg" alt="">
+        songsol.innerHTML=songsol.innerHTML + `<li class="cont flex"> <img  class="invert" src="svg/music.svg" alt="">
                         <div class="songname "><p>${song.replaceAll("%20"," ")}</p>
                         <p>CMA</p></div>
                 <div class="playnow">Play Now</div>
-                <img  class="invert" src="play.svg" alt="">
+                <img  class="invert" src="svg/play.svg" alt="">
                     </li>`
         // `<li>${song.replaceAll("%20"," ")}</li>`;
     }
@@ -99,11 +99,11 @@ async function main() {
     play.addEventListener("click",()=>{
         if(currentsong.paused){
             currentsong.play()
-            play.src="pause.svg"
+            play.src="svg/pause.svg"
         }
         else{
             currentsong.pause()
-            play.src="play.svg"
+            play.src="svg/play.svg"
         }
     })
     currentsong.addEventListener("timeupdate",()=>{
